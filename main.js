@@ -31,12 +31,12 @@ class GameScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('dev', './assests/developer.png');
-    this.load.image('laptop', './assests/laptop.jpeg');
-    this.load.image('code', './assests/funcode.png');
-    this.load.image('catch', './assests/coding.jpeg');
-    this.load.audio('code', './assests/beepSound.mp3');
-    this.load.audio('bgmusic', './assests/Tu_Hai_Kahan.mp3');
+    this.load.image('dev', '/public/assests/developer.png');
+    this.load.image('laptop', '/public/assests/laptop.jpeg');
+    this.load.image('code', '/public/assests/funcode.png');
+    this.load.image('catch', '/public/assests/coding.jpeg');
+    this.load.audio('code', '/public/assests/beepSound.mp3');
+    this.load.audio('bgmusic', '/public/assests/Tu_Hai_Kahan.mp3');
   }
   create() {
     this.scene.pause("gameScene");
