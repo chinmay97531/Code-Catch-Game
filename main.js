@@ -31,12 +31,12 @@ class GameScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('dev', '/public/assests/developer.png');
-    this.load.image('laptop', '/public/assests/laptop.jpeg');
-    this.load.image('code', '/public/assests/funcode.png');
-    this.load.image('catch', '/public/assests/coding.jpeg');
-    this.load.audio('code', '/public/assests/beepSound.mp3');
-    this.load.audio('bgmusic', '/public/assests/Tu_Hai_Kahan.mp3');
+    this.load.image('dev', '/assets/developer.png');
+    this.load.image('laptop', '/assets/laptop.jpeg');
+    this.load.image('code', '/assets/funcode.png');
+    this.load.image('catch', '/assets/coding.jpeg');
+    this.load.audio('code', '/assets/beepSound.mp3');
+    this.load.audio('bgmusic', '/assets/Tu_Hai_Kahan.mp3');
   }
   create() {
     this.scene.pause("gameScene");
@@ -128,7 +128,7 @@ const config = {
     type: Phaser.WEBGL,
     width: sizes.width,
     height: sizes.height,
-    canvas: gameCanvas,
+    canvas: document.getElementById('gameCanvas'),
     physics: {
         default: 'arcade',
         arcade: {
